@@ -11,7 +11,7 @@ const HomePage = () => {
 
       <div className="title__wrapper">
         <p className="home__page-title">Welcome!</p>
-        <p className="home__page-title2">Help our experts recommend what’s perfect for you</p>
+        <p className="home__page-subtitle">Help our experts recommend what’s perfect for you</p>
       </div>
 
       <p className="home__page-description">

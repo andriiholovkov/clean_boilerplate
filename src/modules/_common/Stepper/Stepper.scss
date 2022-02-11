@@ -1,0 +1,19 @@
+.progress__bar {
+  height: 8px;
+  width: 1200px;
+  border-radius: 8px;
+  background: #C4C4C44D;
+  margin-left: 120px;
+  position: absolute;
+  top: 96px;
+  left: 0;
+
+  &-step {
+    height: 8px;
+    width: 71.5px;
+    left: 120px;
+    top: 136px;
+    border-radius: 8px;
+    background: #323264;
+  }
+}

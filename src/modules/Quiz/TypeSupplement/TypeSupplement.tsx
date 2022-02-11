@@ -2,41 +2,27 @@ import React from 'react';
 import HeaderLogo from '../../_common/HeaderLogo/HeaderLogo';
 import Button from '../../_common/Button/Button';
 import './TypeSupplement.scss';
-import backArrow from './assets/svg/Left.svg';
+import Stepper from '../../_common/Stepper/Stepper';
+import BackArrow from '../../_common/BackArrow/BackArrow';
+import buttons from './defaultData';
 
 const TypeSupplement = () => {
+  const arrayOfButtons = buttons.map((item, i) => (
+    <button className="quiz__answer" key={item.title + i}>
+      {item.title}
+    </button>
+  ));
+
+  const buttonsWrapper = <div className="quiz__answers-wrapper">{arrayOfButtons}</div>;
+
   return (
     <div>
       <HeaderLogo />
-
-      <div className="progress__bar">
-        <div className="progress__bar-step"></div>
-      </div>
-
-      <div className="back__buttons-wrapper">
-        <img src={backArrow} className="back__button-arrow" alt="Back button arrow" />
-        <p className="back__button-text">Back</p>
-      </div>
-
+      <Stepper />
+      <BackArrow />
       <p className="quiz__question">Do you know what type of supplement you&apos;re looking for?</p>
-
       <p className="quiz__suggestion">We suggest trying a mild laxative first (which usually works in 1-2 days).</p>
-
-      <div className="quiz__answers-wrapper">
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-        <button className="quiz__answer">Button</button>
-      </div>
-
+      {buttonsWrapper}
       <Button />
     </div>
   );
