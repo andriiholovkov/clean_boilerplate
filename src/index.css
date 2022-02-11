@@ -5,95 +5,12 @@
   font-style: normal;
 }
 
-/*@font-face {*/
-/*  font-family: 'GilroyBold';*/
-/*  src: url('assets/fonts/Gilroy-Bold.ttf') format('truetype');*/
-/*  font-weight: bold;*/
-/*  font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*  font-family: 'GilroySemi';*/
-/*  src: url('assets/fonts/Gilroy-Semibold.ttf') format('truetype');*/
-/*  font-weight: bold;*/
-/*  font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*  font-family: 'Gilroy';*/
-/*  src: url('assets/fonts/Gilroy-Regular.ttf') format('truetype');*/
-/*  font-weight: 700;*/
-/*  font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*  font-family: 'GilroyLight';*/
-/*  src: url('assets/fonts/Gilroy-Light.ttf') format('truetype');*/
-/*  font-weight: normal;*/
-/*  font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*  font-family: 'GilroyBlack';*/
-/*  src: url('assets/fonts/Gilroy-Black.ttf') format('truetype');*/
-/*  font-weight: normal;*/
-/*  font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*  font-family: 'GilroyHeavy';*/
-/*  src: url('assets/fonts/Gilroy-Heavy.ttf') format('truetype');*/
-/*  font-weight: 400;*/
-/*  font-style: normal;*/
-/*}*/
-
-
-
-
-
-/*@font-face {*/
-/*  font-family: 'Gilroy';*/
-/*  src: url('assets/fonts/Inter-Medium.ttf') format('truetype');*/
-/*  font-weight: normal;*/
-/*  font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*  font-family: 'GilroyBold';*/
-/*  src: url('assets/fonts/Inter-Bold.ttf') format('truetype');*/
-/*  font-weight: bold;*/
-/*  font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*  font-family: 'GilroySemi';*/
-/*  src: url('assets/fonts/Inter-Semibold.ttf') format('truetype');*/
-/*  font-weight: bold;*/
-/*  font-style: normal;*/
-/*}*/
-
 @font-face {
   font-family: 'Inter';
   src: url('assets/fonts/inter/Inter-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
-/*@font-face {*/
-/*  font-family: 'GilroyLight';*/
-/*  src: url('assets/fonts/Inter-Light.ttf') format('truetype');*/
-/*  font-weight: normal;*/
-/*  font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*  font-family: 'GilroyBlack';*/
-/*  src: url('assets/fonts/Inter-Black.ttf') format('truetype');*/
-/*  font-weight: normal;*/
-/*  font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*  font-family: 'GilroyHeavy';*/
-/*  src: url('assets/fonts/Inter-Heavy.ttf') format('truetype');*/
-/*  font-weight: 400;*/
-/*  font-style: normal;*/
-/*}*/
 
 * {
   margin: 0;
