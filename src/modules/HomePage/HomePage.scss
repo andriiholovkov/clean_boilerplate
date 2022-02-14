@@ -15,11 +15,6 @@
   padding-top: 16px;
 }
 
-.home__page-subtitle {
-  @extend .home__page-title;
-  padding: 0;
-}
-
 .home__page-description {
   margin-top: 20px;
   margin-left: 120px;
@@ -40,3 +35,16 @@
   z-index: -3;
 }
 
+.tool__tip-wrapper {
+  margin-top: 325px;
+  margin-left: 120px;
+  width: 560px;
+  font-size: 14px;
+  color: #323264;
+  font-family: Gilroy;
+  line-height: 22px;
+}
+
+.tool__tip-text {
+  margin-bottom: 8px;
+}
