@@ -1,9 +1,9 @@
 import React from 'react';
 import HeaderLogo from '../../_common/HeaderLogo/HeaderLogo';
-import backArrow from '../MoreQuestions/assets/svg/Left.svg';
 import './MoreQuestions.scss';
 import greenGrass from '../MoreQuestions/assets/png/image.png';
 import Stepper from '../../_common/Stepper/Stepper';
+import BackArrow from '../../_common/BackArrow/BackArrow';
 
 const MoreQuestions = () => {
   return (
@@ -12,13 +12,9 @@ const MoreQuestions = () => {
 
       <Stepper />
 
-      <div className="back__buttons-wrapper">
-        <img src={backArrow} className="back__button-arrow" alt="Back button arrow" />
-        <p className="back__button-text">Back</p>
-      </div>
+      <BackArrow />
 
       <p className="more__question-title">Would you like to answer a few more questions for better results?</p>
-
       <p className="more__question-subheading">It’s just a couple more minutes!</p>
 
       <div className="more__question-buttons__wrapper">
