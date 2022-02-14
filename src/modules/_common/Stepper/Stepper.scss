@@ -1,3 +1,10 @@
+.progress__bar-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  //background: red;
+  //height: 8px;
+}
+
 .progress__bar {
   height: 8px;
   width: 1200px;
@@ -6,7 +13,7 @@
   margin-left: 120px;
   position: absolute;
   top: 96px;
-  left: 0;
+  //left: 240px;
 
   &-step {
     height: 8px;
@@ -15,5 +22,21 @@
     top: 136px;
     border-radius: 8px;
     background: #323264;
+  }
+}
+
+@media (max-width: 375px) {
+  .progress__bar {
+    height: 4px;
+    width: 335px;
+    border-radius: 4px;
+    margin-left: 21px;
+    top: 56px;
+
+    &-step {
+      height: 4px;
+      width: 71.5px;
+      border-radius: 4px;
+    }
   }
 }

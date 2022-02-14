@@ -9,9 +9,11 @@ const MoreQuestions = () => {
     <div>
       <HeaderLogo />
 
+      {/*<div className="progress__bar-wrapper">*/}
       <div className="progress__bar">
         <div className="progress__bar-step"></div>
       </div>
+      {/*</div>*/}
 
       <div className="back__buttons-wrapper">
         <img src={backArrow} className="back__button-arrow" alt="Back button arrow" />

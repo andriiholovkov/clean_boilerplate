@@ -3,7 +3,7 @@ import './Button.scss';
 
 const Button = () => {
   return (
-    <div>
+    <div className="quiz__button-wrapper">
       <button className="quiz__button">Take a quiz</button>
     </div>
   );

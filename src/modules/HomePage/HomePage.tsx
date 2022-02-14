@@ -17,7 +17,9 @@ const HomePage = () => {
         We&apos;re here to help you find a product that&apos;s best suited to your needs
       </p>
 
-      <img src={greenGrass} className="green__grass-img" alt="Green grass" />
+      <div className="green__grass-wrapper">
+        <img src={greenGrass} className="green__grass-img" alt="Green grass" />
+      </div>
 
       <Button />
 

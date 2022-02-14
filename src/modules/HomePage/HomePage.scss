@@ -1,6 +1,7 @@
 .title__wrapper {
   margin-left: 120px;
 }
+
 @media (max-width: 375px) {
   .title__wrapper {
     margin-left: 20px;
@@ -52,10 +53,15 @@
   }
 }
 
+.green__grass-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
 .green__grass-img {
   position: absolute;
+  top: -390px;
   right: 0;
-  top: -40px;
   z-index: -3;
 }
 
@@ -80,7 +86,7 @@
     margin-left: 20px;
     height: 44px;
     width: 335px;
-    margin-top: 189px;
+    margin-top: 84px;
   }
 }
 
