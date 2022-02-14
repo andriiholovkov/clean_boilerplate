@@ -6,7 +6,6 @@
   padding: 19px 20px 19px 20px;
   background: #E62600;
   border: solid 2px #E62600;
-
   font-family: Gilroy;
   font-size: 18px;
   font-style: normal;
@@ -15,9 +14,19 @@
   letter-spacing: 0.04em;
   text-align: center;
   color: white;
-
   position: absolute;
   left: 120px;
-
   cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .quiz__button {
+    height: 52px;
+    width: 335px;
+    left: 20px;
+    top: 224px;
+    padding: 12px 20px;
+    line-height: 27px;
+    letter-spacing: 0em;
+  }
 }
