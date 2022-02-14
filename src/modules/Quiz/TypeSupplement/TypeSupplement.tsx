@@ -1,10 +1,11 @@
 import React from 'react';
 import HeaderLogo from '../../_common/HeaderLogo/HeaderLogo';
-import Button from '../../_common/Button/Button';
+// import Button from '../../_common/Button/Button';
 import './TypeSupplement.scss';
 import Stepper from '../../_common/Stepper/Stepper';
 import BackArrow from '../../_common/BackArrow/BackArrow';
 import buttons from './defaultData';
+import NextButton from '../../_common/NextButton/NextButton';
 
 const TypeSupplement = () => {
   const arrayOfButtons = buttons.map((item, i) => (
@@ -23,7 +24,7 @@ const TypeSupplement = () => {
       <p className="quiz__question">Do you know what type of supplement you&apos;re looking for?</p>
       <p className="quiz__suggestion">We suggest trying a mild laxative first (which usually works in 1-2 days).</p>
       {buttonsWrapper}
-      <Button />
+      <NextButton />
     </div>
   );
 };

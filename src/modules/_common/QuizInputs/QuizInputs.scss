@@ -8,13 +8,20 @@
   margin-bottom: 248px;
 }
 
+@media (max-width: 375px) {
+  .quiz__inputs-wrapper {
+    margin-left: 20px;
+    margin-top: 18px;
+  }
+}
+
 .input__wrapper {
   position: relative;
 }
 
 .quiz__input {
-  width: 108.5px;
-  height: 58px;
+  width: 107.5px;
+  height: 57px;
   border: solid 1px grey;
   border-radius: 8px;
   outline: none;
@@ -25,6 +32,13 @@
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+@media (max-width: 375px) {
+  .quiz__input {
+    width: 107px;
+    height: 51px;
+  }
 }
 
 .error__message {

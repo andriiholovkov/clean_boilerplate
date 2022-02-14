@@ -3,17 +3,14 @@ import HeaderLogo from '../../_common/HeaderLogo/HeaderLogo';
 import backArrow from '../MoreQuestions/assets/svg/Left.svg';
 import './MoreQuestions.scss';
 import greenGrass from '../MoreQuestions/assets/png/image.png';
+import Stepper from '../../_common/Stepper/Stepper';
 
 const MoreQuestions = () => {
   return (
     <div>
       <HeaderLogo />
 
-      {/*<div className="progress__bar-wrapper">*/}
-      <div className="progress__bar">
-        <div className="progress__bar-step"></div>
-      </div>
-      {/*</div>*/}
+      <Stepper />
 
       <div className="back__buttons-wrapper">
         <img src={backArrow} className="back__button-arrow" alt="Back button arrow" />
@@ -29,7 +26,9 @@ const MoreQuestions = () => {
         <button className="recommendations__button">See recommendations</button>
       </div>
 
-      <img src={greenGrass} className="green__grass-img" alt="Green grass" />
+      <div className="green__grass-wrapper">
+        <img src={greenGrass} className="green__grass-img" alt="Green grass" />
+      </div>
     </div>
   );
 };
