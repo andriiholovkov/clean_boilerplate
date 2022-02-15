@@ -1,11 +1,17 @@
 import React from 'react';
 import './Button.scss';
 
-const Button = () => {
+interface Props {
+  title: string;
+  className: string;
+  clickHandler?: () => void;
+}
+
+const Button = ({ title, className, clickHandler }: Props) => {
   return (
-    <div className="quiz__button-wrapper">
-      <button className="quiz__button">Take a quiz</button>
-    </div>
+    <button className={className} onClick={clickHandler}>
+      {title}
+    </button>
   );
 };
 

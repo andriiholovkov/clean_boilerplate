@@ -3,8 +3,12 @@ import './HomePage.scss';
 import HeaderLogo from '../_common/HeaderLogo/HeaderLogo';
 import greenGrass from './assets/png/image.png';
 import Button from '../_common/Button/Button';
+import { useNavigate } from 'react-router-dom';
+import ROUTES from '../../constants/routerConstants';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <HeaderLogo />
@@ -21,7 +25,9 @@ const HomePage = () => {
         <img src={greenGrass} className="green__grass-img" alt="Green grass" />
       </div>
 
-      <Button />
+      <div className="quiz__button-wrapper">
+        <Button title={'Take a quiz'} className={'quiz__button'} clickHandler={() => navigate(ROUTES.QUIZ_PAGE)} />
+      </div>
 
       <div className="tool__tip-wrapper">
         <p className="tool__tip-text">* This tool is not intended to diagnose or treat any chronic conditions.</p>

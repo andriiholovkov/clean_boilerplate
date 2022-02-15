@@ -1,28 +1,3 @@
-.back__buttons-wrapper {
-  display: flex;
-  margin-left: 120px;
-  position: relative;
-  margin-top: -60px;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  .back__button-text {
-    font-family: Gilroy;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #323264;
-    position: absolute;
-    top: 4px;
-    left: 32px;
-  }
-}
-
 .quiz__question {
   width: 1000px;
   margin-left: 120px;
