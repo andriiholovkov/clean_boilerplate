@@ -3,7 +3,7 @@ const ROUTES = {
   QUIZ_PAGE: '/quiz',
   QUIZ_QUESTION_2: '/quiz_question_2',
   QUIZ_MORE_QUESTIONS: '/quiz_more_questions',
-  RECOMMENDATION_PAGE: '/recommendation',
+  RECOMMENDATION_PAGE: '/recommendations',
 };
 
 export default ROUTES;

@@ -23,7 +23,7 @@ const TypeSupplement = () => {
     <div>
       <HeaderLogo />
       <Stepper />
-      <BackArrow />
+      <BackArrow title={'Back'} />
       <p className="quiz__question">Do you know what type of supplement you&apos;re looking for?</p>
       <p className="quiz__suggestion">We suggest trying a mild laxative first (which usually works in 1-2 days).</p>
       {buttonsWrapper}

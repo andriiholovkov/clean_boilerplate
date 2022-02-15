@@ -15,7 +15,7 @@ const Question = () => {
     <div>
       <HeaderLogo />
       <Stepper />
-      <BackArrow />
+      <BackArrow title={'Back'} />
       <p className="quiz__question">What month and year were you born?</p>
       <p className="quiz__suggestion">&#60;Hint text&#62;</p>
       <QuizInputs />

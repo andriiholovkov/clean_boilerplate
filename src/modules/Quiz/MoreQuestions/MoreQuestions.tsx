@@ -15,7 +15,7 @@ const MoreQuestions = () => {
     <div>
       <HeaderLogo />
       <Stepper />
-      <BackArrow />
+      <BackArrow title={'Back'} />
 
       <p className="more__question-title">Would you like to answer a few more questions for better results?</p>
       <p className="more__question-subheading">It’s just a couple more minutes!</p>
