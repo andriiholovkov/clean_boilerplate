@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.scss';
 import HeaderLogo from '../_common/HeaderLogo/HeaderLogo';
-import greenGrass from './assets/png/image.png';
+import greenGrass from './assets/png/green-grass.png';
 import Button from '../_common/Button/Button';
 import { useNavigate } from 'react-router-dom';
 import ROUTES from '../../constants/routerConstants';

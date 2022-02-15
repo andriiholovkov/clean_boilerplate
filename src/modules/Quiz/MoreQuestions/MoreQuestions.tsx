@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderLogo from '../../_common/HeaderLogo/HeaderLogo';
 import './MoreQuestions.scss';
-import greenGrass from '../MoreQuestions/assets/png/image.png';
+import greenGrass from './assets/png/green-grass.png';
 import Stepper from '../../_common/Stepper/Stepper';
 import BackArrow from '../../_common/BackArrow/BackArrow';
 import { useNavigate } from 'react-router-dom';

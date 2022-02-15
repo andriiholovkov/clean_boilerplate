@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeaderLogo.scss';
-import companyLogo from './assets/png/WAG_Signature_logo_RGB 1.png';
+import companyLogo from './assets/png/walgreens-logo.png';
 import logoSymbol from './assets/svg/symbol.svg';
 import optima from './assets/svg/salus_optima.svg';
 

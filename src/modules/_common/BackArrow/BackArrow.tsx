@@ -1,5 +1,5 @@
 import React from 'react';
-import backArrow from './assets/svg/Left.svg';
+import backArrow from './assets/svg/left-arrow.svg';
 import './BackArrow.scss';
 import { useNavigate } from 'react-router-dom';
 
