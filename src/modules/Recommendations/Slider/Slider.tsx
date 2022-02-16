@@ -2,8 +2,31 @@ import React from 'react';
 import './Slider.scss';
 import SliderCard from '../SliderCard/SliderCard';
 import PNG_ICONS from '../assets/png/png';
+import sliderCardData from '../SliderCard/sliderCardData';
+// import Slider from 'react-slick';
 
 const Slider = () => {
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
+  const renderSlides = () =>
+    sliderCardData.map(({ unchecked, image, category, title, subtitle, span_text, link }, index) => (
+      <SliderCard
+        key={index}
+        unchecked={unchecked}
+        image={image}
+        category={category}
+        title={title}
+        subtitle={subtitle}
+        span_text={span_text}
+        link={link}
+      />
+    ));
+
   return (
     <div>
       <div className="recommendations__slider-wrapper">
@@ -12,11 +35,8 @@ const Slider = () => {
         </div>
 
         <div className="recommendations__card-wrapper">
-          <SliderCard />
-          <SliderCard />
-          <SliderCard />
-          <SliderCard />
-          <SliderCard />
+          {/*<Slider {...settings}>{renderSlides()}</Slider>*/}
+          {renderSlides()}
         </div>
 
         <div className="recommendations__slider-arrow__right">

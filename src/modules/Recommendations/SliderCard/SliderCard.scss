@@ -43,7 +43,7 @@
 
 .image__card-category {
   height: 20px;
-  width: 100px;
+  //width: 100px;
   left: 16px;
   top: 16px;
   border-radius: 12px;
@@ -98,18 +98,27 @@
 }
 
 .image__card-link {
-  height: 41px;
   width: 246px;
   font-family: Gilroy;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
   text-decoration: underline;
   color: #2F4C96;
-  margin: 31px 0 0 16px;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
 }
 
+.slick-track {
+  display: flex;
+}
+
+.slick-slide slick-active {
+  outline: none;
+  width: 285px;
+  margin-right: 20px;
+}
 
