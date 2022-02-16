@@ -1,13 +1,13 @@
 import React from 'react';
 import './Button.scss';
 
-interface Props {
+interface ButtonProps {
   title: string;
   className: string;
   clickHandler?: () => void;
 }
 
-const Button = ({ title, className, clickHandler }: Props) => {
+const Button = ({ title, className, clickHandler }: ButtonProps) => {
   return (
     <button className={className} onClick={clickHandler}>
       {title}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.scss';
+import PNG_ICONS from './assets/png/png';
 import HeaderLogo from '../_common/HeaderLogo/HeaderLogo';
-import greenGrass from './assets/png/green-grass.png';
 import Button from '../_common/Button/Button';
 import { useNavigate } from 'react-router-dom';
 import ROUTES from '../../constants/routerConstants';
@@ -22,11 +22,11 @@ const HomePage = () => {
       </p>
 
       <div className="green__grass-wrapper">
-        <img src={greenGrass} className="green__grass-img" alt="Green grass" />
+        <img src={PNG_ICONS.GREEN_GRASS} className="green__grass-img" alt="Green grass" />
       </div>
 
       <div className="quiz__button-wrapper">
-        <Button title={'Take a quiz'} className={'quiz__button'} clickHandler={() => navigate(ROUTES.QUIZ_PAGE)} />
+        <Button title="Take a quiz" className="quiz__button" clickHandler={() => navigate(ROUTES.QUIZ_PAGE)} />
       </div>
 
       <div className="tool__tip-wrapper">

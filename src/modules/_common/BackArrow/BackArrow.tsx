@@ -1,13 +1,13 @@
 import React from 'react';
-import backArrow from './assets/svg/left-arrow.svg';
+import SVG_ICONS from '../assets/svg/svg';
 import './BackArrow.scss';
 import { useNavigate } from 'react-router-dom';
 
-interface BackButton {
+interface BackArrowProps {
   title: string;
 }
 
-const BackArrow = ({ title }: BackButton) => {
+const BackArrow = ({ title }: BackArrowProps) => {
   const navigate = useNavigate();
 
   return (
@@ -18,7 +18,7 @@ const BackArrow = ({ title }: BackButton) => {
           navigate(-1);
         }}
       >
-        <img src={backArrow} className="back__button-arrow" alt="Back button arrow" />
+        <img src={SVG_ICONS.LEFT_ARROW} className="back__button-arrow" alt="Back button arrow" />
         <p className="back__button-text">{title}</p>
       </div>
     </div>
@@ -26,17 +26,3 @@ const BackArrow = ({ title }: BackButton) => {
 };
 
 export default BackArrow;
-
-interface Props {
-  title: string;
-  className: string;
-  clickHandler?: () => void;
-}
-
-const Button = ({ title, className, clickHandler }: Props) => {
-  return (
-    <button className={className} onClick={clickHandler}>
-      {title}
-    </button>
-  );
-};

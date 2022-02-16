@@ -15,12 +15,12 @@ const Question = () => {
     <div>
       <HeaderLogo />
       <Stepper />
-      <BackArrow title={'Back'} />
+      <BackArrow title="Back" />
       <p className="quiz__question">What month and year were you born?</p>
       <p className="quiz__suggestion">&#60;Hint text&#62;</p>
       <QuizInputs />
       <div className="next__button-wrapper">
-        <Button title={'Next'} className={'next__button'} clickHandler={() => navigate(ROUTES.QUIZ_MORE_QUESTIONS)} />
+        <Button title="Next" className="next__button" clickHandler={() => navigate(ROUTES.QUIZ_MORE_QUESTIONS)} />
       </div>
     </div>
   );

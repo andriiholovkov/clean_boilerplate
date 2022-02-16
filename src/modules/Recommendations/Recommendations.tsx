@@ -11,7 +11,7 @@ const Recommendations = () => {
   return (
     <div>
       <HeaderLogo />
-      <BackArrow title={'Back to quiz'} />
+      <BackArrow title="Back to quiz" />
 
       <h2 className="recommendations__title">Here are some options for you to choose from</h2>
       <p className="recommendations__subtitle">It’s all based on what you told us during the quiz</p>
@@ -42,7 +42,7 @@ const Recommendations = () => {
       </div>
 
       <div className="recommendations__button-wrapper">
-        <Button title={'Add & Continue'} className={'button__add-continue'} />
+        <Button title="Add & Continue" className="button__add-continue" />
       </div>
     </div>
   );

@@ -23,12 +23,12 @@ const TypeSupplement = () => {
     <div>
       <HeaderLogo />
       <Stepper />
-      <BackArrow title={'Back'} />
+      <BackArrow title="Back" />
       <p className="quiz__question">Do you know what type of supplement you&apos;re looking for?</p>
       <p className="quiz__suggestion">We suggest trying a mild laxative first (which usually works in 1-2 days).</p>
       {buttonsWrapper}
       <div className="next__button-wrapper">
-        <Button title={'Next'} className={'next__button'} clickHandler={() => navigate(ROUTES.QUIZ_QUESTION_2)} />
+        <Button title="Next" className="next__button" clickHandler={() => navigate(ROUTES.QUIZ_QUESTION_2)} />
       </div>
     </div>
   );
