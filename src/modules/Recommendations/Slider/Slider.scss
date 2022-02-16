@@ -1,0 +1,51 @@
+.recommendations__slider-wrapper {
+  position: relative;
+  margin: 38px 0 0 119px;
+}
+
+.recommendations__card-wrapper {
+  display: flex;
+  margin-right: 20px;
+}
+
+.recommendations__slider-arrow__right {
+  height: 38px;
+  width: 38px;
+  border-radius: 48px;
+  padding: 5px;
+  background: #EAEDF5;
+  position: absolute;
+  top: 182px;
+  left: 1232px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider-arrow__right {
+  width: 8px;
+  height: 14px;
+  margin: 12px 0 0 20px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.recommendations__slider-arrow__left {
+  height: 38px;
+  width: 38px;
+  border-radius: 48px;
+  padding: 5px;
+  background: #EAEDF5;
+  position: absolute;
+  top: 182px;
+  left: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider-arrow__left {
+  width: 8px;
+  height: 14px;
+  margin: 12px 0 0 14px;
+  cursor: pointer;
+  z-index: 5;
+}

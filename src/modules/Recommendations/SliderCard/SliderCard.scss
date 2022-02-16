@@ -1,0 +1,115 @@
+.recommendations__slider-card {
+  position: relative;
+  height: 412px;
+  width: 285px;
+  border-radius: 16px;
+  margin-right: 20px;
+  border: 1px solid #C4C4C4;
+}
+
+.card-image {
+  margin: 19px 111px 2px;
+}
+
+.card__image-rating {
+  display: flex;
+  margin: 0 76px;
+}
+
+.mark__average,
+.mark__reviews {
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.image__rating-underline {
+  width: 285px;
+  border-top: solid 1px #ededed;
+  margin-top: 12px;
+}
+
+.slider-card__unchecked {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.image__card-category {
+  height: 20px;
+  width: 100px;
+  left: 16px;
+  top: 16px;
+  border-radius: 12px;
+  padding: 2px 8px;
+  styleName: Caption SemiBold;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #323264;
+  margin: 16px 0 0 16px;
+}
+
+.image__card-title {
+  width: 254px;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #323264;
+  margin: 14px 0 0 16px;
+}
+
+.card-subtitle__span-text {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #323264;
+}
+
+.image__card-subtitle {
+  width: 254px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #323264;
+  margin: 10px 0 0 16px;
+}
+
+.image__card-link {
+  height: 41px;
+  width: 246px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
+  color: #2F4C96;
+  margin: 31px 0 0 16px;
+}
+
+
