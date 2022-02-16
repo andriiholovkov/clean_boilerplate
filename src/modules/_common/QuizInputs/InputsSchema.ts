@@ -11,7 +11,7 @@ const InputsSchema = Yup.object().shape({
   year: Yup.number()
     .required('Year is required')
     .typeError('Must be only digits')
-    .min(1990, 'Min year 1990')
+    .min(1900, 'Min year 1990')
     .max(currentYear, `Max year ${currentYear}`),
 });
 

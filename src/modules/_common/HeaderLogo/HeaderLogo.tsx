@@ -1,19 +1,18 @@
 import React from 'react';
 import './HeaderLogo.scss';
-import companyLogo from './assets/png/WAG_Signature_logo_RGB 1.png';
-import logoSymbol from './assets/svg/symbol.svg';
-import optima from './assets/svg/salus_optima.svg';
+import PNG_ICONS from '../assets/png/png';
+import SVG_ICONS from '../assets/svg/svg';
 
 const HeaderLogo = () => {
   return (
     <div className="full__logo-wrapper">
       <a href="#" className="header__logo-link">
-        <img src={companyLogo} className="header__logo-img" alt="Company logo" />
+        <img src={PNG_ICONS.LOGO} className="header__logo-img" alt="Company logo" />
 
         <div className="logo__text-wrapper">
           <p className="logo__text-powered">powered by</p>
-          <img src={logoSymbol} className="logo__text-symbol" alt="Logo color symbol" />
-          <img src={optima} className="logo__text-optima" alt="Text salus optima" />
+          <img src={SVG_ICONS.SYMBOL} className="logo__text-symbol" alt="Logo color symbol" />
+          <img src={SVG_ICONS.OPTIMA} className="logo__text-optima" alt="Text salus optima" />
         </div>
       </a>
     </div>

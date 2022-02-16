@@ -1,13 +1,25 @@
 import React from 'react';
-import backArrow from './assets/svg/Left.svg';
+import SVG_ICONS from '../assets/svg/svg';
 import './BackArrow.scss';
+import { useNavigate } from 'react-router-dom';
 
-const BackArrow = () => {
+interface BackArrowProps {
+  title: string;
+}
+
+const BackArrow = ({ title }: BackArrowProps) => {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <div className="back__buttons-wrapper">
-        <img src={backArrow} className="back__button-arrow" alt="Back button arrow" />
-        <p className="back__button-text">Back</p>
+      <div
+        className="back__buttons-wrapper"
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        <img src={SVG_ICONS.LEFT_ARROW} className="back__button-arrow" alt="Back button arrow" />
+        <p className="back__button-text">{title}</p>
       </div>
     </div>
   );
