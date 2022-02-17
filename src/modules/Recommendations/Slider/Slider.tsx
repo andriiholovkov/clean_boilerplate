@@ -19,6 +19,21 @@ const SliderRender = () => {
     speed: 500,
     slidesToShow: 4.3,
     slidesToScroll: 1,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 375,
+        settings: {
+          arrows: false,
+          dots: false,
+          infinite: false,
+          speed: 500,
+          initialSlide: 1,
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const renderSlides = () =>
