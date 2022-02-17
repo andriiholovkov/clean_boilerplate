@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// import Slider from 'react-slick';
+// const leftButton = ReactDOM.findDOMNode(<Slider />).getElementsByClassName('slick-arrow slick-prev slick-disabled');
+
+// const LEFT_BUTTON = document.getElementsByClassName('slick-arrow slick-prev slick-disabled');
+//
+// console.log(LEFT_BUTTON);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

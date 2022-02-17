@@ -1,6 +1,7 @@
 .recommendations__slider-wrapper {
   position: relative;
   margin: 38px 0 0 119px;
+  overflow: hidden;
 }
 
 .recommendations__card-wrapper {
@@ -8,6 +9,26 @@
   margin-right: 20px;
   max-width: 1200px;
   width: 100%;
+}
+
+.slick-slider slick-initialized {
+  width: 1320px;
+}
+
+.slick-list {
+  width: 1320px;
+}
+
+.slick-slide {
+  width: 290px;
+}
+
+.slick-slide slick-active slick-current {
+  width: 290px;
+}
+
+.slick-arrow slick-prev slick-disabled {
+  background: aqua;
 }
 
 .recommendations__slider-arrow__right {
@@ -20,7 +41,7 @@
   top: 182px;
   left: 1232px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 7;
 }
 
 .slider-arrow__right {
@@ -41,7 +62,7 @@
   top: 182px;
   left: 0;
   cursor: pointer;
-  z-index: 5;
+  z-index: 7;
 }
 
 .slider-arrow__left {
