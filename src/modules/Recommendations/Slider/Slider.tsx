@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './Slider.scss';
 import SliderCard from '../SliderCard/SliderCard';
-import PNG_ICONS from '../assets/png/png';
+// import PNG_ICONS from '../assets/png/png';
 import sliderCardData from '../SliderCard/sliderCardData';
 import Slider from 'react-slick';
 
@@ -13,7 +13,6 @@ const SliderRender = () => {
   }, []);
 
   const settings = {
-    arrows: false,
     dots: false,
     infinite: false,
     speed: 500,
@@ -24,13 +23,12 @@ const SliderRender = () => {
       {
         breakpoint: 375,
         settings: {
-          arrows: false,
           dots: false,
           infinite: false,
           speed: 500,
-          initialSlide: 1,
           slidesToShow: 1.2,
           slidesToScroll: 1,
+          swipeToSlide: true,
         },
       },
     ],
@@ -53,9 +51,9 @@ const SliderRender = () => {
   return (
     <div>
       <div className="recommendations__slider-wrapper">
-        <div className="recommendations__slider-arrow__left" onClick={() => sliderRef?.current?.slickPrev()}>
-          <img className="slider-arrow__left" src={PNG_ICONS.LEFT_ARROW} alt="Slider arrow left" />
-        </div>
+        {/*<div className="recommendations__slider-arrow__left" onClick={() => sliderRef?.current?.slickPrev()}>*/}
+        {/*  <img className="slider-arrow__left" src={PNG_ICONS.LEFT_ARROW} alt="Slider arrow left" />*/}
+        {/*</div>*/}
 
         <div className="recommendations__card-wrapper">
           <Slider ref={sliderRef} {...settings}>
@@ -63,9 +61,9 @@ const SliderRender = () => {
           </Slider>
         </div>
 
-        <div className="recommendations__slider-arrow__right" onClick={() => sliderRef?.current?.slickNext()}>
-          <img className="slider-arrow__right" src={PNG_ICONS.RIGHT_ARROW} alt="Slider arrow right" />
-        </div>
+        {/*<div className="recommendations__slider-arrow__right" onClick={() => sliderRef?.current?.slickNext()}>*/}
+        {/*  <img className="slider-arrow__right" src={PNG_ICONS.RIGHT_ARROW} alt="Slider arrow right" />*/}
+        {/*</div>*/}
       </div>
     </div>
   );
