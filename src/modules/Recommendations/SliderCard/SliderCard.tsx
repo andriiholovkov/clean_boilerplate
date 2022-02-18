@@ -1,6 +1,9 @@
 import React from 'react';
 import './SliderCard.scss';
 import SliderCardRating from '../SliderCardRating/SliderCardRating';
+// import ModalCard from '../../_common/ModalCard/ModalCard';
+// import sliderCardData from './sliderCardData';
+// import modalCardData from '../../_common/ModalCard/modalCardData';
 
 interface Props {
   unchecked: string;
@@ -11,6 +14,26 @@ interface Props {
   span_text: string;
   link: string;
 }
+
+// const renderModalCard = () =>
+//   modalCardData.map(
+//     (
+//       { modalImage, productCategory, productTitle, descriptionText, descriptionAdults,
+//       ingredientsText, warningsText },
+//       index
+//     ) => (
+//       <ModalCard
+//         key={index}
+//         modalImage={modalImage}
+//         productCategory={productCategory}
+//         productTitle={productTitle}
+//         descriptionText={descriptionText}
+//         descriptionAdults={descriptionAdults}
+//         ingredientsText={ingredientsText}
+//         warningsText={warningsText}
+//       />
+//     )
+//   );
 
 const SliderCard = (props: Props) => {
   const { unchecked, image, category, title, span_text, subtitle, link } = props;
@@ -37,7 +60,9 @@ const SliderCard = (props: Props) => {
         <span className="card-subtitle__span-text">{span_text}</span>
         {subtitle}
       </p>
+      {/*<p className="image__card-link" onClick={renderModalCard()}>*/}
       <p className="image__card-link">{link}</p>
+      {/*{renderModalCard()}*/}
     </div>
   );
 };
