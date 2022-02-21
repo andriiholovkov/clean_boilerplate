@@ -15,6 +15,7 @@
 
 @media (max-width: 375px) {
   .header__logo-img {
+    margin-top: -2px;
     width: 144px;
   }
 }
@@ -51,6 +52,7 @@
   .logo__text-powered {
     font-size: 9px;
     line-height: 14px;
+    margin-left: -2px;
   }
 }
 
@@ -76,7 +78,7 @@
 @media (max-width: 375px) {
   .logo__text-optima {
     top: 2px;
-    right: 44px;
+    right: 45px;
     width: 68px;
   }
 }

@@ -49,23 +49,6 @@
   }
 }
 
-//.recommendations__slider-wrapper {
-//  margin: 40px 0 0 120px;
-//}
-
-.recommendations__card-wrapper {
-  display: flex;
-  margin-right: 20px;
-}
-
-.recommendations__slider-card {
-  height: 412px;
-  width: 287px;
-  border-radius: 16px;
-  border: 1px solid #323264;
-  margin-right: 20px;
-}
-
 .recommendations__button-wrapper {
   margin-left: 120px;
 }
@@ -90,10 +73,15 @@
   letter-spacing: 0em;
   text-align: center;
   color: #FFFFFF;
+  margin-top: 46px;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
   .button__add-continue {
+    position: absolute;
+    bottom: -19px;
     height: 52px;
     width: 335px;
     padding: 15px 20px 15px 22px;

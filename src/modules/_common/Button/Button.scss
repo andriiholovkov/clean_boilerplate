@@ -23,6 +23,7 @@
   cursor: pointer;
 }
 
+
 @media (max-width: 375px) {
   .quiz__button-wrapper {
     width: 375px;
@@ -39,7 +40,7 @@
     padding: 12px 20px;
     line-height: 27px;
     letter-spacing: 0em;
-    margin-top: 46px;
+    margin-top: 48px;
   }
 }
 
@@ -58,6 +59,7 @@
 
 .next__button {
   margin-top: 62px;
+  margin-bottom: 150px;
   height: 64px;
   width: 200px;
   border-radius: 50px;
