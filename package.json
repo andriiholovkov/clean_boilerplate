@@ -39,9 +39,9 @@
     }
   },
   "lint-staged": {
-    "src/*{ts,tsx}": [
-      "yarn lint:fix",
-      "yarn prettier"
+    "src/*.{ts,tsx}": [
+      "yarn prettier",
+      "yarn lint:fix"
     ]
   },
   "eslintConfig": {
