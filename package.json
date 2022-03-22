@@ -28,11 +28,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prettier": "prettier --write ./src",
+    "prettier:check": "prettier --check ./src",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix --ext .js,.jsx,.tsx,.ts --color",
-    "prepare": "husky install",
-    "prettier:fix": "prettier --write ./src",
-    "prettier:check": "prettier --check ./src"
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -41,7 +40,8 @@
   },
   "lint-staged": {
     "src/*{ts,tsx}": [
-      "yarn prettier:fix"
+      "yarn lint:fix",
+      "yarn prettier"
     ]
   },
   "eslintConfig": {

@@ -11,7 +11,7 @@ const HomePageContent = () => {
       {Data1.map(({ title }, index) => {
         return <div key={index}>{title}</div>;
       })}
-      <Button title="Button" />
+      <Button title='Button' />
     </div>
   );
 };
