@@ -30,8 +30,9 @@
     "prettier": "prettier --write ./src",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix --ext .js,.jsx,.tsx,.ts --color",
-    "postinstall": "husky install",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier:fix": "prettier --write ./src",
+    "prettier:check": "prettier --check ./src"
   },
   "husky": {
     "hooks": {
@@ -39,10 +40,8 @@
     }
   },
   "lint-staged": {
-    "*.ts": [
-      "yarn lint:fix",
-      "git add",
-      "git status"
+    "src/*{ts,tsx}": [
+      "yarn prettier:fix"
     ]
   },
   "eslintConfig": {

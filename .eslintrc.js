@@ -26,9 +26,9 @@ module.exports = {
     // "warn" or 1 - turn the rule on as a warning (doesn't affect exit code)
     // "error" or 2 - turn the rule on as an error (exit code will be 1)
 
-    "@typescript-eslint/ban-ts-ignore": "off",
-    "    @typescript-eslint/ban-ts-comment": 'off',
-    "ban-ts-comment": 'off',
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '    @typescript-eslint/ban-ts-comment': 'off',
+    'ban-ts-comment': 'off',
 
     'object-curly-newline': 'off',
 
@@ -50,22 +50,18 @@ module.exports = {
     'array-bracket-spacing': ['error', 'never'],
     // 🔧 Fixable, 	Enforce consistent spacing inside array brackets
 
-    'array-element-newline': [
-      'warn',
-      'consistent',
-      {multiline: true, minItems: 3},
-    ],
+    'array-element-newline': ['warn', 'consistent', { multiline: true, minItems: 3 }],
     // 🔧 Fixable, Enforce line breaks between array elements (array-element-newline)
 
     'keyword-spacing': 'off',
-    '@typescript-eslint/keyword-spacing': [1, {before: true, after: true}],
+    '@typescript-eslint/keyword-spacing': [1, { before: true, after: true }],
     // 🔧 Fixable, Enforce consistent spacing before and after keywords (keyword-spacing)
 
     'eol-last': [0, 'never'],
     // 🔧 Fixable, The last line must be not empty (--fix)
 
     'no-duplicate-imports': 'off',
-    '@typescript-eslint/no-duplicate-imports': [2, {includeExports: true}],
+    '@typescript-eslint/no-duplicate-imports': [2, { includeExports: true }],
     // Disallow duplicate imports (no-duplicate-imports)
 
     'default-param-last': 'off',
@@ -86,7 +82,7 @@ module.exports = {
     ],
     // ✅ Recommended, disallow variable declarations from shadowing variables declared in the outer scope (no-shadow)
 
-    '@typescript-eslint/no-explicit-any': [1, {ignoreRestArgs: true}], // <---------------------------- NEED REVIEW
+    '@typescript-eslint/no-explicit-any': [1, { ignoreRestArgs: true }], // <---------------------------- NEED REVIEW
     // 🔧 Fixable, ✅ Recommended, Disallow usage of the any type (no-explicit-any)
 
     'react/no-unescaped-entities': [
@@ -94,7 +90,7 @@ module.exports = {
       {
         forbid: [
           {
-            char: '\'',
+            char: "'",
             alternatives: [`&apos;`],
           },
           {},
@@ -131,7 +127,7 @@ module.exports = {
     curly: [2, 'all'],
     // 🔧 Fixable, Require Following Curly Brace Conventions
 
-    'no-redeclare': [2, {builtinGlobals: true}],
+    'no-redeclare': [2, { builtinGlobals: true }],
     'operator-linebreak': [
       2,
       'before',
@@ -147,7 +143,7 @@ module.exports = {
       },
     ],
 
-    'no-console': [0, {allow: ['warn', 'error']}],
+    'no-console': [0, { allow: ['warn', 'error'] }],
     // disallow the use of console
 
     'brace-style': [2, '1tbs'],
@@ -155,18 +151,18 @@ module.exports = {
 
     'arrow-body-style': 0,
     'arrow-parens': 0,
-    'no-param-reassign': [2, {props: true}],
+    'no-param-reassign': [2, { props: true }],
     'padding-line-between-statements': [
       2,
-      {blankLine: 'always', prev: '*', next: 'return'},
-      {blankLine: 'always', prev: ['const', 'let', 'var'], next: '*'},
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
       {
         blankLine: 'any',
         prev: ['const', 'let', 'var'],
         next: ['const', 'let', 'var'],
       },
-      {blankLine: 'always', prev: 'directive', next: '*'},
-      {blankLine: 'always', prev: 'block-like', next: '*'},
+      { blankLine: 'always', prev: 'directive', next: '*' },
+      { blankLine: 'always', prev: 'block-like', next: '*' },
     ],
 
     // React
@@ -176,7 +172,7 @@ module.exports = {
     'import/prefer-default-export': 2,
     // When there is only a single export from a module, prefer using default export over named export.
 
-    'react/jsx-filename-extension': [1, {extensions: ['.tsx']}],
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     /// Restrict file extensions that may contain JSX (react/jsx-filename-extension)
 
     'standard/no-callback-literal': 0,
