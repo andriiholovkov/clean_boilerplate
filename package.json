@@ -29,7 +29,21 @@
     "eject": "react-scripts eject",
     "prettier": "prettier --write ./src",
     "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix --ext .js,.jsx,.tsx,.ts --color"
+    "lint:fix": "eslint ./src --fix --ext .js,.jsx,.tsx,.ts --color",
+    "postinstall": "husky install",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "yarn lint:fix",
+      "git add",
+      "git status"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +71,9 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "pinst": "^3.0.0",
     "prettier": "2.5.1"
   }
 }
