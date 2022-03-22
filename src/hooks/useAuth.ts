@@ -1,11 +1,11 @@
-const useAuth = () => {
-  const testNumber = 10;
-  const testString = 'string';
+const useTest = () => {
+  const test = () => {
+    console.log(alert('Test Hook Worked!'));
+  };
 
   return {
-    testNumber,
-    testString,
+    test,
   };
 };
 
-export default useAuth;
+export default useTest;
